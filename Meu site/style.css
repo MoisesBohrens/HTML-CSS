@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+:root{
+    --cor0: #EFCBAB;
+    --cor1: #818B82;
+    --cor2: #1F74BF;
+    --cor3: #555D21;
+    --cor4: #324001;
+    
+    --fonte-padrão: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Rock Salt', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrão);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+header > h1{
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+header > p{
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    color: white;
+    max-width: 750px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+nav{
+    background-color: var(--cor4);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1px;
+}
+
+.menu li{
+    position: relative;
+    display: inline;
+}
+
+.menu li a{
+    background-color: var(--cor4);
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.menu li a:hover{
+    color: var(--cor1);
+    background-color: var(--cor3);
+    transition-duration: 0.5s;
+}
+
+.menu li ul{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    display: none;
+}
+
+.menu li:hover ul, .menu li.over ul{
+    display: block;
+}
+
+.menu li ul li a{
+    border: 1px;
+    display: block;
+    width: 200px;
+}
+
+main{
+    background-color: var(--cor1);
+    min-width: 300px;
+    max-width: 1300px;
+    margin: auto;
+    background-color: var(--cor0);
+
+}
+
+main h1{
+    background-color: var(--cor1);
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    text-align: center;
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor4), var(--cor3), var(--cor1));
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    text-indent: 20px;
+}
+
+main picture{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+    
+img{
+    height: 300px;
+    object-fit: cover;
+    width: 300px;
+    padding: 10px;    
+}
+
+
+main p{
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 20px;
+    margin: 15px 0px 15px 0px;
+    line-height: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+}

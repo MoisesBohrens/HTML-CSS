@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body{
+    background-color: blanchedalmond;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    background-color: cadetblue;
+    color: brown;
+}
+h2{
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    color: blueviolet;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+}
